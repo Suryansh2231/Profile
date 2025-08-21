@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Suryansh Gupta</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -29,10 +29,8 @@
         <div class="hero">
             <h2 class="less">Hii There! <span class="wave" role="img" aria-labelledby="wave">👋🏻</span></h2>
             <h1 class="main-heading">I'm Suryansh Gupta</h1>
-            <p id="typer"></p>
-             <h1><coder></h1>
             <p class="home-desc">Front end developer who writes clean, elegant and efficient code.</p>
-        </div>
+          </div>
         <div class="hero-img">
             <img src="circle.png" alt="">
         </div>
@@ -40,21 +38,25 @@
     </header>
   
     <div id="About">
-        <h1 class="about">"About Me"</h1>
-        <div class="intro">
-            <p class="desc">
-                Hello, I'm Suryansh Gupta , Frontend Developer. I'm from Jaunpur Uttar Pradesh. I have great passion for coding. The most beautiful thing about coding is problem solving. I love Mathematics and I love to solve critical problems. 
-            </p>
-            <p class="desc">
-                Although I am new in programming but I am continuous learner so I have I will get brief knowledge of programming in upcoming years of my life.
-                I have done a lot of practice in HTML, CSS and Javascript. I used them in my daily programming life. I am keep exploring about them.
-            </p>
-            <p class="desc">I am curious about my first job. I want to interact with professional programmer so that I can learn as much as possible.
-                I want to work for a organization that provides opportunity to gain knowledge, experience and fullfill organization gaols.
-                Please give me a chance to show my skills to you. 
-            </p>
-        </div>
+    <h1 class="about">About Me</h1>
+    <div class="intro">
+        <p class="desc">
+            Hello, I'm Suryansh Gupta, a Frontend Developer from Jaunpur, Uttar Pradesh. I have a great passion for coding. 
+            The most beautiful thing about coding, to me, is problem-solving. I love Mathematics and enjoy solving critical problems.
+        </p>
+        <p class="desc">
+            Although I am new to programming, I am a continuous learner and believe I will gain deep knowledge in the coming years. 
+            I have practiced a lot with HTML, CSS, and JavaScript, and I use them regularly in my programming journey. 
+            I keep exploring and improving my skills in these technologies.
+        </p>
+        <p class="desc">
+            I am excited to interact with professional programmers to learn as much as possible. 
+            I want to work for an organization that provides opportunities to grow, gain knowledge, and contribute to its goals. 
+            Please give me a chance to demonstrate my skills.
+        </p>
     </div>
+</div>
+
 
     <div id="Skills">
         <div class="mid">
@@ -86,12 +88,12 @@
     <h2 class="icon-desc">Bootstrap</h2>
   </div>
   <div class="part">
-    <i class="icons fa-brands fa-npm"></i>
-    <h2 class="icon-desc">NPM</h2>
-  </div>
-  <div class="part">
     <i class="icons fa-solid fa-wind"></i>
     <h2 class="icon-desc">Tailwind CSS</h2>
+  </div>
+  <div class="part">
+    <i class="icons fa-brands fa-npm"></i>
+    <h2 class="icon-desc">NPM</h2>
   </div>
 </div>
 
@@ -132,8 +134,8 @@
     </div>
 
     <div class="project-card">
-      <h3 class="project-title">To-Do App</h3>
-      <p class="project-desc">A simple task manager using HTML, CSS, and JavaScript.</p>
+      <h3 class="project-title">Clone project</h3>
+      <p class="project-desc">A simple clone project using HTML and Bootstrap.</p>
     </div>
   </div>
 </div>
@@ -171,16 +173,42 @@
     </a>
   </div>
 </div>
-    <div id="Contact">
-  <h2 class="contact-title">Contact Me</h2>
 
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+<!-- Contact Section -->
+<div id="Contact">
+  <h2 class="contact-title">Get in Touch</h2>
+
+  <div class="contact-container">
+    <!-- Left Column -->
+    <div class="contact-left">
+      <a><i class="fas fa-phone"></i> +91 90440 87328</a>
+      <a><i class="fas fa-envelope"></i>suryansh2231@gmail.com</a>
+      <a><i class="fab fa-github"></i> github.com/suryansh2231</a>
+    </div>
+
+    <!-- Right Column -->
+    <div class="contact-right">
+      <a><i class="fab fa-instagram"></i>surya2231</a>
+      <a><i class="fab fa-linkedin"></i> linkedin.com/in/suryansh2231</a>
+      <a><i class="fas fa-paper-plane"></i> <a href="#" id="openModal">Message Me</a></a>
+    </div>
+  </div>
 </div>
+
+<!-- ✅ Popup Modal Form -->
+<div id="messageModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Send a Message</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
 
 <footer id="Footer">
   <div class="footer-container">
