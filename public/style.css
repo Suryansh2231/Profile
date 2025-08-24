@@ -1,28 +1,36 @@
 
+
+html, body {
+  overflow-x: hidden;
+}
+
 body{
   background-color: #e3edf7;
   margin: 0;
   padding: 0;
 }
 
-#navbar{
+#navbar {
     color: white;
-    background-color:#333333;
+    background-color: #333333;
     height: 5rem;
-    width: full;
+    width: 100%;   /* ✅ Fix */
     display: flex;
-    
 }
+
 
 .nav-heading{
     font-size: 2.5rem;
     margin: 1rem;
     margin-left: 4rem;
 }
-.top{
+
+.top {
     margin-top: 1.6rem;
-    margin-left: 20rem;
+    margin-left: auto;  /* ✅ Prevents overflow */
+    margin-right: 1rem;
 }
+
 .link{
     padding-left: 2.5rem;
     text-decoration: none;
@@ -40,6 +48,9 @@ body{
   margin-right: 2rem;
   cursor: pointer;
   margin-top: 1.6rem;
+}
+.menu-toggle i{
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -78,6 +89,7 @@ body{
   .nav-heading {
     margin-left: 1.5rem;
   }
+  
 }
 
 /* Home Section */
@@ -422,6 +434,8 @@ body{
     font-size: 20px;
     margin: 23px 0;
     display: flex;
+    text-decoration: none;
+    color: blue;
   }
 
   i {
@@ -429,10 +443,7 @@ body{
     margin-right: 10px;
     
   }
-  #openModal{
-    text-decoration: none;
-    color: #000000;
-  }
+  
 
   /* ✅ Modal Styling */
   .modal {
@@ -508,6 +519,9 @@ body{
       flex-direction: column;
       align-items: center;
       gap: 0;
+    }
+    .contact-right{
+      padding-left: 10vw;
     }
     
   }

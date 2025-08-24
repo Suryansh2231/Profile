@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <nav id="navbar">
+  <nav id="navbar">
   <h1 class="nav-heading">Suryansh</h1>
   <div class="menu-toggle" id="menu-toggle">
     <i class="fas fa-bars"></i>
@@ -32,7 +32,7 @@
             <p class="home-desc">Front end developer who writes clean, elegant and efficient code.</p>
           </div>
         <div class="hero-img">
-            <img src="circle.png" alt="">
+            <img src="profile.png" alt="">
         </div>
         </div>
     </header>
@@ -62,7 +62,7 @@
         <div class="mid">
         <h1>"My Skills"</h1>
         <h2>Tech Stack</h2>
-<div class="container">
+  <div class="container">
   <div class="part">
     <i class="icons fa-brands fa-html5"></i>
     <h2 class="icon-desc">HTML</h2>
@@ -175,37 +175,52 @@
 </div>
 
 <!-- Contact Section -->
-<div id="Contact">
+ <div id="Contact">
   <h2 class="contact-title">Get in Touch</h2>
 
   <div class="contact-container">
     <!-- Left Column -->
     <div class="contact-left">
-      <a><i class="fas fa-phone"></i> +91 90440 87328</a>
-      <a><i class="fas fa-envelope"></i>suryansh2231@gmail.com</a>
-      <a><i class="fab fa-github"></i> github.com/suryansh2231</a>
+      <a href="tel:+919044087328" target="_blank" ><i class="fas fa-phone"></i> +91 90440 87328</a>
+      <a href="mailto:suryansh2231@gmail.com" target="_blank"><i class="fas fa-envelope"></i>suryansh2231@gmail.com</a>
+      <a href="https://github.com/suryansh2231" target="_blank"><i class="fab fa-github"></i> github.com/suryansh2231</a>
     </div>
 
     <!-- Right Column -->
     <div class="contact-right">
-      <a><i class="fab fa-instagram"></i>surya2231</a>
-      <a><i class="fab fa-linkedin"></i> linkedin.com/in/suryansh2231</a>
-      <a><i class="fas fa-paper-plane"></i> <a href="#" id="openModal">Message Me</a></a>
+      <a href="https://linkedin.com/in/suryanshgupta-dev" target="_blank"><i class="fab fa-linkedin"></i>linkedin.com/in/suryanshgupta-dev</a>
+      <a href="https://www.instagram.com/sur_ya0823/" target="_blank"><i class="fab fa-instagram"></i>sur_ya0823</a>
+      <a href="#" id="openModal"><i class="fas fa-paper-plane"></i>Message Me</a>
     </div>
   </div>
-</div>
+</div>   
 
 <!-- ✅ Popup Modal Form -->
 <div id="messageModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>Send a Message</h2>
-    <form>
+    <!-- <form>
       <input type="text" placeholder="Your Name" required>
       <input type="email" placeholder="Your Email" required>
       <textarea placeholder="Your Message" required></textarea>
       <button type="submit">Send</button>
-    </form>
+    </form> -->
+    <form
+  action="https://formspree.io/f/mldlqkra"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
   </div>
 </div>
 
