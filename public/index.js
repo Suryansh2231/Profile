@@ -7,6 +7,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+  const typed = new Typed('.typer', {
+    strings: ['I Love to Code',"What's Your Superpower"],
+    typeSpeed: 100,
+    backDelay: 1000,
+    loopCount: 3,
+    loop: true,
+    cursorChar: '|'
+  });
+
+
+
 // Get modal elements
   const modal = document.getElementById("messageModal");
   const openModal = document.getElementById("openModal");
